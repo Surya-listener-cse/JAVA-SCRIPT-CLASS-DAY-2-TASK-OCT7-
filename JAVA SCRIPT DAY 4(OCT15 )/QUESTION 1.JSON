@@ -1,7 +1,7 @@
-// ITERATION OF JSON;
-let obj = {
+
+const obj ={
     "name": "Sam",
-    "role: "Developer",
+    "role: "developer",
     dob: "dd-mm-yyyy",
     isIndian: true,
   };
