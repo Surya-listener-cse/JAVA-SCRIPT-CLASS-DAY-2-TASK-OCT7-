@@ -1,0 +1,134 @@
+Do the below programming in anonymous function & IIFE...
+  a. print odd numbers in an array:
+
+     anonymous:  function(array) {
+                   for (var i = 0; i < array.length; i++){
+                   if(array[i]%2 == 0){
+                      console.log(array[i])
+                   }   
+                   }
+     }  
+
+     IIFE:  (function(array) {
+              for (var i = 0; i < array.length; i++){
+                if(array[i]%2 == 0){
+                    console.log(array[i])
+                }
+              }
+     })
+
+  b. Convert all the strings to the title caps in a  string array.
+      
+      anonymous : function (string) {
+                    str = str.toLowerCase().split(" ");
+                    for (var i = 0; i < str.length; i++) {
+                        str[i]= str[i].charAt(0).toUpperCase()+str[i].slice(1);
+                    }
+                     return str.join(' ');
+      }
+
+      IIFE:    (function (string) {
+                    str = str.toLowerCase().split(" ");
+                    for (var i = 0; i < str.length; i++) {
+                        str[i]= str[i].charAt(0).toUpperCase()+str[i].slice(1);
+                    }
+                     return str.join(' ');
+      })
+        
+   c. sum of all numbers in an array....
+
+      anonymous : function(array){
+                     var sum = 0;
+                     for (var i = 0; i < array.length; i++) {
+                        sum= sum + array[i];
+                        }
+                        return sum;
+      }
+
+      IIFE:    (function(array){
+                     var sum = 0;
+                     for (var i = 0; i < array.length; i++) {
+                        sum= sum + array[i];
+                        }
+                        return sum;
+      })
+
+   d. Return all the prime numbers in an array..
+      
+      anonymous  : function(numArray) {
+                     numArray= numArray.filter((number) {
+                        for (var i=2 ;i<= math.sqrt(number); i++){
+                            if(number%i ===0)return false;
+                            }
+                            return true;
+
+                     });
+                     console.log(numArray);
+      }
+                    
+       IIFE:    (function(numArray) {
+                     numArray= numArray.filter((number) {
+                        for (var i=2 ;i<= math.sqrt(number); i++){
+                            if(number%i ===0)return false;
+                            }
+                            return true;
+
+                     });
+                     console.log(numArray);
+      })
+
+      e. Return all the palandromes in an array
+
+      anonymous: function( arr , n){
+                    for(let i=0 ; i<n; i++)
+                    {
+                        let ans = ispalandrom(arr[i]);
+                        if(ans==false)
+                         return false;
+                    }
+                    return true;
+      }
+
+      IIFE: (function( arr , n){
+                    for(let i=0 ; i<n; i++)
+                    {
+                        let ans = ispalandrom(arr[i]);
+                        if(ans==false)
+                         return false;
+                    }
+                    return true;
+      })
+
+      g. Remove duplicates from an array
+
+       anonymous: function(array){
+                    let dup = [...new set(array)];
+                    console.log(dup);   
+       }
+
+       IIFE:    (function(array){
+                    let dup = [...new set(array)];
+                    console.log(dup);   
+       })
+ 
+       f. Rotate an array by k times
+
+         anonymous : function(array , k){
+                       k = k% a.length;
+                       if (k < 0){
+                        k +=a.length;
+                       }
+                       reverse(a,0, a.length - k -1);
+                       reverse(a, a.length - k, a.length - 1);
+                       reverse(a, 0, a.length -1);
+         }
+
+         IIFE:    (function(array , k){
+                       k = k% a.length;
+                       if (k < 0){
+                        k +=a.length;
+                       }
+                       reverse(a,0, a.length - k -1);
+                       reverse(a, a.length - k, a.length - 1);
+                       reverse(a, 0, a.length -1);
+         })
