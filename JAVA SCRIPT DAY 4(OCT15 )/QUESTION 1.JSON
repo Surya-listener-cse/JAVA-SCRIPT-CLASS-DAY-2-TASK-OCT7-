@@ -1,0 +1,25 @@
+// ITERATION OF JSON;
+let obj = {
+    "name": "Sam",
+    "role: "Developer",
+    dob: "dd-mm-yyyy",
+    isIndian: true,
+  };
+
+  for itearion:
+    for(var i=0 ; i < itearion.length; i++);{
+       if(itearion[i] == 0);
+       console.log(itearion[i]);
+    }
+  for of iterations:
+    for(let values of object.value(obj)){
+        console.log(value);
+    }
+
+    for(let key of objects.key(obj)){
+        console.log(key);
+    }
+  for in iteration:
+    for(let key in obj){
+        console.log(key);
+    }
